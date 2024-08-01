@@ -1,0 +1,96 @@
+* {
+  font-family: "Public Sans", sans-serif;
+}
+bodY {
+  background-color: #fdf8ebf8;
+  padding: 0;
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #0066a8;
+  height: 60px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  font-family: "Fantasy", "Papyrus";
+}
+.container {
+  padding: 50px;
+}
+.tasks-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tasks-table th,
+.tasks-table td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+}
+.tasks-table tr:nth-child(odd) {
+  background-color: #d13b3b3a; /* adjust the color to your liking */
+}
+.tasks-table th {
+  background-color: #ac0728e1;
+  color: white;
+}
+
+.tasks-table tr:nth-child(even) {
+  background-color: #d13b3b79; /* adjust the color to your liking */
+}
+
+.tasks-table tr:hover {
+  background-color: #f3e4e4;
+}
+
+.tasks-table td button {
+  background-color: #ac0728;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tasks-table td button:hover {
+  background-color: #ac0727ff;
+}
+.search-filter {
+  display: flex;
+  align-items: center;
+  background-color: #0066a8;
+  border: 1px solid hsl(0, 0%, 87%);
+  border-radius: 4px;
+  padding: 8px;
+  width: 250px; /* adjust the width to your liking */
+}
+
+.search-filter input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #0066a8;
+  color: white;
+  border: 1px solid white;
+}
+
+.search-filter input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 4px #ccc;
+}
+
+.search-filter:hover::before {
+  color: white;
+}
+::placeholder {
+  color: white;
+}
